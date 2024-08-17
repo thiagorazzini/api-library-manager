@@ -1,6 +1,13 @@
+using LibraryManager.Application;
+using LibraryManager.Infra;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder
+    .Services
+    .AddApplication()
+    .AddInfra(builder.Configuration);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
