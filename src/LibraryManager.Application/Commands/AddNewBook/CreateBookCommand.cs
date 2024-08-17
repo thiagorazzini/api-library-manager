@@ -1,8 +1,8 @@
 ﻿using LibraryManager.Core.Enums;
 
-namespace LibraryManager.Application.Models
+namespace LibraryManager.Application.Commands.AddNewBook
 {
-    public class CreateBookInputModel
+    public class CreateBookCommand
     {
         public string Title { get; set; } = string.Empty!;
         public string Author { get; set; } = string.Empty!;

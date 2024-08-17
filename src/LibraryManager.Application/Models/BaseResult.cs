@@ -14,7 +14,7 @@
 
     public class BaseResult<T> : BaseResult
     {
-        public BaseResult(T data, bool success= true, string message = "") 
+        public BaseResult(T? data, bool success= true, string message = "") 
             : base(success, message)
         {
             Data = data;
