@@ -1,6 +1,6 @@
-﻿using LibraryManager.API.Enums;
+﻿using LibraryManager.Core.Enums;
 
-namespace LibraryManager.API.Entities
+namespace LibraryManager.Core.Entities
 {
     public class User : BaseEntity
     {

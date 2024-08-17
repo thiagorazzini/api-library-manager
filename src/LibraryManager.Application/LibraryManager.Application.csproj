@@ -8,6 +8,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LibraryManager.Domain\LibraryManager.Core.csproj" />
+    <ProjectReference Include="..\LibraryManager.Infra\LibraryManager.Infra.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Queries\" />
   </ItemGroup>
 
 </Project>

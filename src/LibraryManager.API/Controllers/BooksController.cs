@@ -1,4 +1,4 @@
-﻿using LibraryManager.API.Models;
+﻿using LibraryManager.Application.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -32,7 +32,7 @@ namespace LibraryManager.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllBooks(BookViewModel model) 
+        public IActionResult GetAllBooks(BookViewModel model)
         {
             return Ok();
         }
@@ -68,7 +68,7 @@ namespace LibraryManager.API.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpDelete("{id}")]
-        public IActionResult DeleteBook(Guid id) 
+        public IActionResult DeleteBook(Guid id)
         {
             return NoContent();
         }

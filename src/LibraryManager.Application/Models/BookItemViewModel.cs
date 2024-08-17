@@ -1,6 +1,6 @@
-﻿using LibraryManager.API.Enums;
+﻿using LibraryManager.Core.Enums;
 
-namespace LibraryManager.API.Models
+namespace LibraryManager.Application.Models
 {
     public class BookItemViewModel
     {
