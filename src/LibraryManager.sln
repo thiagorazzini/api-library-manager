@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Application"
 		{68E99BB8-D4DC-4B9C-87BF-BB2FE04E924F} = {68E99BB8-D4DC-4B9C-87BF-BB2FE04E924F}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Domain", "LibraryManager.Domain\LibraryManager.Domain.csproj", "{7743F03B-DBAE-4A67-803D-E08829919A99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Core", "LibraryManager.Domain\LibraryManager.Core.csproj", "{7743F03B-DBAE-4A67-803D-E08829919A99}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Infra", "LibraryManager.Infra\LibraryManager.Infra.csproj", "{68E99BB8-D4DC-4B9C-87BF-BB2FE04E924F}"
 EndProject
