@@ -2,45 +2,20 @@
 
 namespace LibraryManager.Core.Entities
 {
-    public class User : BaseEntity
+    public class User
     {
+        public User(Guid id, string fullName, string email)
+        {
+            Id = id;
+            FullName = fullName;
+            Email = email;
+        }
+
+        public Guid Id { get; private set; }
         public string FullName { get; private set; } = string.Empty;
         public string Email { get; private set; } = string.Empty;
-        public UserStatusEnum Status { get; private set; }
-        public StatusUserBlock StatusBlock { get; private set; }
-        public DateTime BlockUntil { get; set; }
 
-        public void BlockUser()
-        {
-            if( Status == UserStatusEnum.Active && StatusBlock == StatusUserBlock.Unblock)
-            {
-                StatusBlock = StatusUserBlock.Block;
-                BlockUntil = DateTime.Now.AddDays(30);
-            }
-        }
+        public ICollection<BorrowBook> BorrowBook { get; private set; }
 
-        public void InactivateUser()
-        {
-            if (Status == UserStatusEnum.Active)
-            {
-                Status = UserStatusEnum.Inactive;
-            }
-        }
-
-        public void ActivateUser()
-        {
-            if (Status == UserStatusEnum.Inactive)
-            {
-                Status = UserStatusEnum.Active;
-            }
-        }
-
-        public void UnblockUser()
-        {
-            if(Status != UserStatusEnum.Inactive && StatusBlock == StatusUserBlock.Block)
-            {
-                StatusBlock = StatusUserBlock.Unblock;
-            }
-        }
     }
 }
